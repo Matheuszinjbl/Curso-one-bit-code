@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cadastro da liga dos astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da liga dos astronautas</h3>
+    <form action="">
+        <label for="q">Nome:</label>
+        <input type="text" required>
+        <br><br>
+        <label for="eml">Email:</label>
+        <input type="email" name="eml" id="eml" autocomplete="off" required>
+        <label for="psw">- Password:</label>
+        <input type="password" name="psw" id="psw">
+        <br><br>
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" name="nascimento" id="nascimento">
+        <label for="arquivo">- Foto:</label>
+        <input type="file" name="arquivo" id="arquivo">
+        <br><br>
+        <label for="n">Nacionalidade:</label>
+        <select name="n" id="n" placeholder="Escolha seu pais">
+            <option value="nulo">-----</option>
+            <option value="bra">Brasil</option>
+            <option value="arg">Argentina</option>
+            <option value="rus">Estados Unidos</option>
+            <option value="rus">Russia</option>
+        </select>
+        <label for="g">- Gênero:</label>
+        <a>F</a>
+        <input type="radio" name="" id="">
+        <a>M</a>
+        <input type="radio" name="" id="">
+        <br><br>
+        <label for="q">Suas principais qualidades:</label>
+        <br>
+        <label for="i">Inteligência</label>
+        <input type="checkbox" name="i" id="i">
+        <label for="r">| Resiliência</label>
+        <input type="checkbox" name="r" id="r">
+        <label for="p">| Preparo físico</label>
+        <input type="checkbox" name="p" id="p">
+        <label for="i">| Educação</label>
+        <input type="checkbox" name="e" id="e">
+        <label for="|">|</label>
+        <br><br>
+        <textarea id="story" name="story"rows="10" cols="33">
+Porque você gostaria de ser um astronauta?
+        </textarea>
+        <br><br>
+        <input type="submit" value="Criar">
+    </form>
+</body>
+</html>

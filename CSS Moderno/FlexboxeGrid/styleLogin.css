@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+
+.logoNavBar{
+    width: 180px;
+    margin-top: 1rem;
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.navBtn {
+    font-size: 16px;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navBtn:hover{
+    border-bottom: 2px solid red;
+} 
+
+h1{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.card-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #292929;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+input {
+    background-color: #424040;
+    border: none;
+    padding: 15px;
+}
+
+.btnPassword{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+::placeholder{
+    color: white;
+}
+
+.btnPassword:hover{
+    border-bottom: 2px solid red;
+} 
+
+
+.btnEnviar{
+    color: white;
+}
+
+.LogoFooter{
+    width: 180px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 15px;
+}
+
+.footerAnchor{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 630px){
+    .gridContainer{
+        grid-template-areas:
+         "mainContent"
+         "sidebarContent";
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 10px;
+    }
+    .sidebarContent{
+        min-width: auto;
+    }
+    .footerAnchor{
+        font-size: 18px;
+    }
+}
+
+@media (max-widht: 463px) {
+    .header{
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+    }
+}
